@@ -47,8 +47,8 @@ const back = computed(() => (bust.value / 6 + 4.5).toFixed(2))
         </div>
 
         <!-- Right Calculator Panel -->
-        <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-2xl shadow-2xl border border-white/10">
-          <div class="flex items-center justify-between pb-4 border-b border-white/10">
+        <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-2xl shadow-2xl border border-dark-border">
+          <div class="flex items-center justify-between pb-4 border-b border-dark-border">
             <span class="text-white font-semibold flex items-center space-x-2">
               <Sliders class="w-4 h-4 text-brand-primary" />
               <span>原型尺寸推算演示 (原型 B 算法)</span>
@@ -85,8 +85,8 @@ const back = computed(() => (bust.value / 6 + 4.5).toFixed(2))
             </div>
 
             <!-- Results -->
-            <div class="bg-[#050608] border border-white/10 rounded-xl p-4 space-y-3 font-mono">
-              <div class="text-xs text-gray-400 border-b border-white/10 pb-2 flex justify-between">
+            <div class="bg-dark-bg border border-dark-border rounded-xl p-4 space-y-3 font-mono">
+              <div class="text-xs text-gray-400 border-b border-dark-border pb-2 flex justify-between">
                 <span>结构部位</span>
                 <span>实时推算数值</span>
               </div>

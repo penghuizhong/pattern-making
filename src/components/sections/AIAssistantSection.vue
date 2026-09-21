@@ -6,7 +6,7 @@ const inputText = ref('')
 </script>
 
 <template>
-  <section id="ai-assistant" class="py-20 border-b border-dark-border bg-[#0a0c12] relative">
+  <section id="ai-pattern" class="py-20 border-b border-dark-border bg-dark-bg relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-12">
         <span class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-xs px-3 py-1 rounded-full font-bold uppercase tracking-widest shadow-lg shadow-purple-500/30">
@@ -19,7 +19,7 @@ const inputText = ref('')
       <!-- AI Console -->
       <div class="max-w-4xl mx-auto glass-card rounded-2xl overflow-hidden shadow-2xl border border-purple-500/20">
         <!-- Console Header -->
-        <div class="bg-[#121624] px-6 py-3.5 border-b border-white/10 flex items-center justify-between">
+        <div class="bg-dark-card px-6 py-3.5 border-b border-dark-border flex items-center justify-between">
           <div class="flex items-center space-x-2">
             <div class="w-3 h-3 rounded-full bg-red-500"></div>
             <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -49,7 +49,7 @@ const inputText = ref('')
             <div class="w-9 h-9 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white flex items-center justify-center font-bold text-xs flex-shrink-0 shadow-md">
               AI
             </div>
-            <div class="bg-[#0b0e17] border border-purple-500/30 p-5 rounded-2xl rounded-tl-none text-sm space-y-4 w-full">
+            <div class="bg-dark-bg border border-purple-500/30 p-5 rounded-2xl rounded-tl-none text-sm space-y-4 w-full">
               <div class="flex items-center justify-between text-xs text-purple-300 border-b border-purple-500/20 pb-3">
                 <span>已解析需求：女式双排扣西装 (包含 S, M, L 3个规格)</span>
                 <span class="text-emerald-400 flex items-center space-x-1">
@@ -75,7 +75,7 @@ const inputText = ref('')
               </div>
 
               <!-- Nested Pattern SVG -->
-              <div class="h-36 bg-[#040507] border border-white/10 rounded-xl flex items-center justify-center relative overflow-hidden">
+              <div class="h-36 bg-dark-bg border border-dark-border rounded-xl flex items-center justify-center relative overflow-hidden">
                 <svg class="w-72 h-full text-purple-400 opacity-90" viewBox="0 0 200 100">
                   <!-- S -->
                   <path d="M40,20 L80,20 L75,80 L45,80 Z" fill="none" stroke="currentColor" stroke-width="0.8" stroke-dasharray="2,2"/>
@@ -102,7 +102,7 @@ const inputText = ref('')
         </div>
 
         <!-- Input Bar -->
-        <div class="bg-[#101420] p-4 border-t border-white/10 flex items-center space-x-3">
+        <div class="bg-dark-card p-4 border-t border-dark-border flex items-center space-x-3">
           <input
             v-model="inputText"
             type="text"

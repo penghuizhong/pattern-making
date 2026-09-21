@@ -86,7 +86,7 @@ function setFilter(category: CadCategory) {
 </script>
 
 <template>
-  <section id="cad-library" class="py-20 border-b border-dark-border bg-[#0a0c12]">
+  <section id="cad-library" class="py-20 border-b border-dark-border bg-dark-bg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
         <div>
@@ -125,7 +125,7 @@ function setFilter(category: CadCategory) {
           :class="['glass-card rounded-2xl p-4 transition-all duration-300 flex flex-col justify-between group', item.borderColor]"
         >
           <div>
-            <div :class="['h-48 bg-[#050608] rounded-xl border border-white/5 flex items-center justify-center p-4 relative overflow-hidden transition', item.previewBorderColor]">
+            <div :class="['h-48 bg-dark-bg rounded-xl border border-dark-border flex items-center justify-center p-4 relative overflow-hidden transition', item.previewBorderColor]">
               <svg :class="['w-full h-full stroke-current fill-none', item.svgColor]" viewBox="0 0 100 100">
                 <path :d="item.svgPath" :stroke-dasharray="item.svgDash || undefined" />
                 <circle v-if="item.svgCircle" cx="50" cy="50" r="15" stroke-dasharray="2,2" />

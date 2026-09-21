@@ -16,7 +16,7 @@ function togglePattern() {
 </script>
 
 <template>
-  <section id="hero" class="relative min-h-[calc(100vh-4rem)] flex items-center overflow-hidden border-b border-dark-border">
+  <section id="hero" class="hero-section relative min-h-[calc(100vh-4rem)] flex items-center overflow-hidden border-b border-dark-border bg-dark-bg">
     <!-- 1. Fashion Background -->
     <div class="absolute inset-0 hero-bg-fashion scale-105"></div>
 
@@ -62,7 +62,7 @@ function togglePattern() {
           </div>
 
           <!-- Metrics -->
-          <div class="grid grid-cols-3 gap-4 pt-8 border-t border-white/10 max-w-xl mx-auto lg:mx-0">
+          <div class="grid grid-cols-3 gap-4 pt-8 border-t border-dark-border max-w-xl mx-auto lg:mx-0">
             <div>
               <div class="text-2xl sm:text-3xl font-extrabold text-white font-mono">85%<span class="text-brand-primary text-base">+</span></div>
               <div class="text-xs text-gray-400 mt-1">制版效率提升</div>
@@ -85,7 +85,7 @@ function togglePattern() {
             <div class="absolute inset-x-0 h-1 bg-gradient-to-r from-transparent via-brand-primary to-transparent animate-scan opacity-40 pointer-events-none"></div>
 
             <!-- Panel Header -->
-            <div class="flex items-center justify-between pb-3 border-b border-white/10 text-xs font-mono text-gray-300">
+            <div class="flex items-center justify-between pb-3 border-b border-dark-border text-xs font-mono text-gray-300">
               <div class="flex items-center space-x-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
                 <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
@@ -96,7 +96,7 @@ function togglePattern() {
             </div>
 
             <!-- CAD Preview -->
-            <div class="relative h-[340px] bg-[#06070a] rounded-xl mt-3 p-3 flex items-center justify-center overflow-hidden border border-white/5">
+            <div class="relative h-[340px] bg-dark-bg rounded-xl mt-3 p-3 flex items-center justify-center overflow-hidden border border-dark-border">
               <svg class="w-full h-full text-brand-primary/90" viewBox="0 0 400 400">
                 <!-- Grid -->
                 <g stroke="#1a202c" stroke-width="0.8">

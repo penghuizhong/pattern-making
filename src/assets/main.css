@@ -87,7 +87,7 @@
 
   --color-dark-bg: var(--color-bg-primary);
   --color-dark-card: var(--color-bg-secondary);
-  --color-dark-border: #1f2433;
+  --color-dark-border: var(--color-border-primary);
   --color-dark-hover: var(--color-bg-hover);
 
   --font-sans: "Inter", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
@@ -283,6 +283,61 @@ input[type="range"]::-moz-range-thumb {
   input[type="checkbox"] {
     accent-color: #ffab00;
   }
+
+  /* ===== Hero Section 浅色主题专属适配 ===== */
+
+  /* Hero 背景图：浅色模式下调高亮度 + 降低对比度 */
+  .hero-section .hero-bg-fashion {
+    filter: brightness(1.1) contrast(0.9);
+    opacity: 0.7;
+  }
+
+  /* Hero 渐变遮罩：深色 → 浅色（让文字依然可读） */
+  .hero-section .bg-gradient-to-r.from-dark-bg {
+    --tw-gradient-from: #F8F7F4 !important;
+    --tw-gradient-to: rgba(248, 247, 244, 0) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), #f5f1e3, var(--tw-gradient-to) !important;
+  }
+  .hero-section .bg-gradient-to-t.from-dark-bg {
+    --tw-gradient-from: #F8F7F4 !important;
+    --tw-gradient-to: rgba(248, 247, 244, 0) !important;
+  }
+
+  /* Hero 霓虹光晕：浅色模式下降低不透明度，避免脏污感 */
+  .hero-section .bg-brand-primary\/15 {
+    background-color: rgba(255, 171, 0, 0.08) !important;
+  }
+  .hero-section .bg-purple-600\/15 {
+    background-color: rgba(139, 92, 246, 0.08) !important;
+  }
+
+  /* Hero CAD HUD 面板内 SVG 适配 */
+  .hero-section svg {
+    /* 网格线：深色模式下是 #1a202c，浅色改为淡灰 */
+    [stroke="#1a202c"] {
+      stroke: #e5e7eb !important;
+    }
+    /* 白色锚点圆点：浅色背景看不见，改为深灰 */
+    [fill="#ffffff"] {
+      fill: #374151 !important;
+    }
+    /* 浅灰文字标签：改为深灰确保可读 */
+    [fill="#e2e8f0"] {
+      fill: #4b5563 !important;
+    }
+    /* 天蓝色文字：加深提高对比度 */
+    [fill="#38bdf8"] {
+      fill: #0284c7 !important;
+    }
+  }
+
+  /* ===== 统一边框兜底 ===== */
+  .border-white\/5 { border-color: var(--color-border-tertiary) !important; }
+  .border-white\/10 { border-color: var(--color-border-primary) !important; }
+  .border-white\/20 { border-color: rgba(0, 0, 0, 0.12) !important; }
+
+  /* ===== Tutorials 图片占位 ===== */
+  .bg-gray-800 { background-color: #e5e7eb !important; }
 }
 
 /* 主题过渡动画 */

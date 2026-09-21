@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import {
   Search,
   Menu,
@@ -21,12 +21,17 @@ const isLightTheme = ref(false)
 // 服装设计网站地址
 const fashionDesignUrl = 'https://sheji.fangyuan-ai.com'
 
+// 初始化主题（从 localStorage 读取，与 index.html 中的防闪烁脚本同步）
+onMounted(() => {
+  isLightTheme.value = document.documentElement.classList.contains('light-theme')
+})
+
 const navLinks = [
   { href: '#hero', label: '首页', active: true },
   { href: '#ai-pattern', label: 'AI制版', active: false, pro: true },
   { href: '#knowledge', label: '知识库', active: false },
   { href: '#cad-library', label: 'CAD图稿库', active: false },
-  { href: '#calculator', label: '公式计算器', active: false },
+  { href: '#calculator', label: '制版工具', active: false },
   { href: '#tutorials', label: '制版教程', active: false },
 ]
 
@@ -46,8 +51,10 @@ function toggleTheme() {
   isLightTheme.value = !isLightTheme.value
   if (isLightTheme.value) {
     document.documentElement.classList.add('light-theme')
+    localStorage.setItem('theme', 'light')
   } else {
     document.documentElement.classList.remove('light-theme')
+    localStorage.setItem('theme', 'dark')
   }
 }
 </script>

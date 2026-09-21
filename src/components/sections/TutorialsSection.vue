@@ -68,7 +68,7 @@ const tutorials = [
         <div
           v-for="t in tutorials"
           :key="t.title"
-          class="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-gray-500 transition group"
+          class="glass-card rounded-2xl overflow-hidden border border-dark-border hover:border-gray-500 transition group"
         >
           <div class="h-48 bg-gray-800 relative overflow-hidden">
             <img :src="t.image" :alt="t.title" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-70">
@@ -78,7 +78,7 @@ const tutorials = [
             <div class="text-xs font-mono mb-2" :class="t.levelColor">{{ t.level }}</div>
             <h3 class="text-white font-bold text-base transition" :class="t.hoverTitle">{{ t.title }}</h3>
             <p class="text-gray-400 text-xs mt-2 leading-relaxed line-clamp-2">{{ t.desc }}</p>
-            <div class="flex items-center justify-between mt-6 pt-4 border-t border-white/10 text-xs text-gray-500">
+            <div class="flex items-center justify-between mt-6 pt-4 border-t border-dark-border text-xs text-gray-500">
               <span>{{ t.hours }}</span>
               <span class="font-semibold" :class="t.priceColor">{{ t.price }}</span>
             </div>

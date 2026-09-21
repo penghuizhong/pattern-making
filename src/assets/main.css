@@ -338,6 +338,29 @@ input[type="range"]::-moz-range-thumb {
 
   /* ===== Tutorials 图片占位 ===== */
   .bg-gray-800 { background-color: #e5e7eb !important; }
+
+  /* ===== Footer 浅色主题适配 ===== */
+  .footer-section {
+    color: var(--color-text-secondary) !important;
+  }
+  .footer-section .border-white {
+    border-color: #374151 !important;
+  }
+  .footer-section .bg-white.rounded-full {
+    background-color: #374151 !important;
+  }
+  /* Footer 输入框文字 */
+  .footer-section input {
+    color: var(--color-text-primary) !important;
+  }
+  .footer-section input::placeholder {
+    color: var(--color-text-muted) !important;
+  }
+
+  /* ===== 徽章黑色背景适配 ===== */
+  .bg-black\/80 {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+  }
 }
 
 /* 主题过渡动画 */

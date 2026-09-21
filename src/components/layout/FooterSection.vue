@@ -5,7 +5,7 @@ const email = ref('')
 </script>
 
 <template>
-  <footer class="bg-[#050608] py-12 border-t border-dark-border text-xs text-gray-400">
+  <footer class="footer-section bg-dark-bg py-12 border-t border-dark-border text-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
 
@@ -53,7 +53,7 @@ const email = ref('')
               v-model="email"
               type="email"
               placeholder="您的电子邮箱"
-              class="bg-dark-card border border-white/10 px-3 py-2 rounded-l-lg text-white focus:outline-none focus:border-brand-primary w-full"
+              class="bg-dark-card border border-dark-border px-3 py-2 rounded-l-lg text-white focus:outline-none focus:border-brand-primary w-full"
             >
             <button class="bg-brand-primary text-black font-bold px-4 py-2 rounded-r-lg hover:bg-amber-400 transition flex-shrink-0">订阅</button>
           </div>
@@ -61,7 +61,7 @@ const email = ref('')
 
       </div>
 
-      <div class="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between text-gray-500">
+      <div class="border-t border-dark-border pt-6 flex flex-col sm:flex-row items-center justify-between text-gray-500">
         <p>&copy; 2026 方圆智版 (AI 服装智能制版) 保留所有权利。</p>
         <div class="flex space-x-6 mt-4 sm:mt-0">
           <a href="javascript:void(0)" class="hover:text-gray-300 transition">隐私政策</a>

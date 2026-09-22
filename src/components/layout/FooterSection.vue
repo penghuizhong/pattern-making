@@ -66,7 +66,7 @@ const email = ref('')
         <div class="flex space-x-6 mt-4 sm:mt-0">
           <a href="javascript:void(0)" class="hover:text-gray-300 transition">隐私政策</a>
           <a href="javascript:void(0)" class="hover:text-gray-300 transition">服务条款</a>
-          <a href="javascript:void(0)" class="hover:text-gray-300 transition">沪ICP备XXXXXXXX号</a>
+          <a href="javascript:void(0)" class="hover:text-gray-300 transition">沪ICP备XXXXXX号</a>
         </div>
       </div>
     </div>
